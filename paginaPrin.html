@@ -1,0 +1,162 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alampe Kids - home</title>
+    <style>
+        #logo{
+            width: 300px;
+            height: auto;
+            margin-left: 40%;
+            margin-top: 10px;
+            position: relative;
+        }
+        #perfil{
+            width: 5%; 
+            height: auto;
+            margin-left: 80%;
+            margin-top: -100px;
+            backdrop-filter: blur(1px);
+            }
+        #carrinho{
+            width: 4%; 
+            height: auto;
+            margin-left: 89%;
+            margin-top: -100px;
+            backdrop-filter: blur(1px);
+        }
+        .opcao{
+            display: flex;
+            padding: 0;
+            list-style-type: none;
+            box-shadow: 0 5px 8px rgb(189, 205, 289);
+            background-color: rgb(189, 255, 255);
+        
+            /*background-image: url(imagens/fita.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 1340px;
+            height: 85px;*/
+        }
+        .opcao ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;    
+        }
+        .opcao li{
+            margin-right: 3%;
+            font-size: 100%;
+            margin-left: 3em; 
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            font-family: comic Sans MS;
+        }
+        .icon{
+            width: 50px;
+            height: 50px;
+            margin-left: 22px;
+        }
+        body{
+            font-family: comic sans MS;
+            
+        }
+        .carss-container{
+            width: 100%;
+            height: 300%;
+            overflow: hidden;
+            position: relative;   
+        }
+        .carss-image{
+            display: flex;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.5s cubic-bezier(1,1,1,1);
+            
+        }
+        .carss-image img{
+            max-width: 100%;
+            height: 21.79%;
+            object-fit: cover;
+            box-shadow: 0 5px 8px rgb(0, 0, 0);
+        }
+        header{
+            background-image: url(imagens/fundo.png);
+            background-size: contain;
+        }
+        
+    </style>
+</head>
+
+<header>
+    <a href="paginaPrin.html"><img id="logo" src="imagens/logoo.png"></a>
+    <img src="imagens/carrinho.png" id="carrinho">
+    <a href="login.html"><img src="imagens/perfil.png" id="perfil"></a>
+
+        <div class="opcao">
+            <ul>
+                <li>
+                    <a href="escrita.html"><b>CANETAS</b><img class="icon" src="imagens/caneta.png"></a><br>
+                    
+                </li> 
+                <li>
+                <a href="caderno.html"><b>CADERNOS</b><img class="icon" src="imagens/caderno.png"></a>
+                
+                </li>
+                <li>
+                    <a href="borrachas.html"><b>BORRACHAS</b><img class="icon" src="imagens/borracha.png"></a>
+                    
+                </li>
+                <li>
+                    <a href="apontador.html"><b>APONTADORES</b><img class="icon" src="imagens/apontador.png"></a>
+                
+                </li>
+                <li>
+                    <a href="marcat.html"><b>MARCA TEXTO</b><img class="icon" src="imagens/pincel.png"></a>
+                    
+                </li>
+                <li>
+                    <a href="lapis.html"><b>LÁPIS</b><img class="icon" src="imagens/lapis.png"></a>
+                    
+                </li>
+                <li>
+                    <a href="postit.html"><b>POST IT</b><img class="icon" src="imagens/bloco.png"> </a>
+                    
+                </li>
+            </ul>
+
+        </div> 
+</header>
+<body>
+    <h1>Aqueles kits INCRIVEIS que você vai AMAAAR </h1>
+    <div class="carss-container">
+        <div class="carss-image">
+            <img src="imagens/carrorela.png" alt="image1">
+            <img src="imagens/pastel.jpeg" alt="image2">
+            <img src="imagens/anime.jpeg" alt="image3">
+        </div>
+    </div>
+    <script>
+        const carss = document.querySelector('.carss-image');
+
+        let position = 0 
+        const slidesToShow = 1
+        const slideWidith = carss.clientWidth / slidesToShow;
+
+        function nextSlide() {
+            position -= slideWidith;
+            carss.style.transform = `translateX(${position}px)`;
+            
+            if (position <= - (carss.scrollWidth)){
+                position = 0;
+                carss.style.transform = `translateX(${position}px)`;
+            }
+        }
+        setInterval(nextSlide, 3000);
+    </script>
+    
+</body>
+</html>

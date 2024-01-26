@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+        body{
+         font-family: Arial;
+         background-color: 	#FFEFD5; 
+        }
+        #log,#cad{
+            width: 40%; 
+            box-sizing: border-box; 
+            float: left;
+            margin-top: 5%;
+            margin-left: 100px;
+            
+            
+        }
+        #logo{
+            width: 300px;
+            height: 100px;
+            margin-left: 40%;
+            margin-top: 10px;
+        }
+        button{
+            width: 150px;
+            height: 50px;
+            font-family: comic sans ms;
+            font-size: large;
+            background-color: transparent;
+        }
+        header{
+            background-color:#ffe1e6;
+        }
+       
+      
+    </style>
+    <header><a href="paginaPrin.html"><img id="logo" src="imagens/logoo.png"></a></header>
+</head>
+<body>
+    <div id="qrd">
+        <div id="log">
+            <form action="entrar.php" method="post">
+                    <h2>Já sou cadastrado 😁</h2>
+                    Para entrar em sua conta, informe seu CPF e senha
+                    <br><br>
+                    CPF: <input type="number" name="cpf"><br><br>
+                    Senha: <input type="password" name="senha"><br><br>
+                    <button><b>Entrar</b></button><br><br>
+            </form>
+        </div>
+        
+        <div id="cad">
+            <form action="cad.php" method="post">
+                <h2> Esta é minha primeira compra 😅</h2>
+                O cadastro em nossa loja é simples e rápido
+                <br><br>
+                Nome: <input type="text" name="nome"><br><br>
+                CPF: <input type="number" name="cpf"><br><br>
+                Email: <input type="email" name="email"><br><br>
+                Senha: <input type="password" name="senha"><br><br>
+                <button><b>Cadastrar</b></button><br><br>
+                
+            </form>
+    </div>
+</div>
+</body>
+</html>

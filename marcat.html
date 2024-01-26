@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marca-Texto</title>
+    <style>
+        body {
+            font-family: Arial;
+        }
+        #logo{
+            width: 250px;
+            height: auto;
+            margin-left: 40%;
+            margin-top: 10px;
+            position: relative;
+            }
+        #perfil{
+            width: 5%; 
+            height: auto;
+            margin-left: 80%;
+            margin-top: -100px;
+            backdrop-filter: blur(1px);
+        }
+        .opcao{
+        display: flex;
+        padding: 0;
+        list-style-type: none;
+        box-shadow: 0 5px 8px rgb(189, 205, 289);
+        background-color: rgb(189, 255, 255);
+        }
+        .opcao ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;    
+        }
+        .opcao li{
+            margin-right: 3%;
+            font-size: 100%;
+            margin-left: 3em; 
+        }
+        .icon{
+            width: 50px;
+            height: 50px;
+            margin-left: 22px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            font-family: comic Sans MS;
+        }
+        header{
+            background-image: url(imagens/fundo.png);
+            background-size: contain;
+          
+        }
+        .catalogo{
+            display: flex;
+            padding: 0;
+            list-style-type: none;
+            box-shadow: 0 5px 8px rgb(189, 205, 289);
+            
+        }
+        .catalogo ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .catalogo li{
+            margin-right: 3%;
+            font-size: 100%;
+            margin-left: 3em; 
+        }
+        .add{
+            width: 100%;
+            height: auto;
+            display:block;
+            margin: 0 auto;
+
+        }
+        .nome-produto .info-produto .add{
+            margin: 10px 0;
+            font-size: 5rem;
+            line-height: 1.4;
+            letter-spacing: .28px;
+            -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+            flex-grow: 1;
+            display: block;
+            text-align: center;
+        }
+        .preco-produto .preco{
+            font-size: 1.50rem;
+            font-weight: 700;
+            display: inline-block;
+            line-height: 1.35;
+            font-family: comic sans ms;
+            display: block;
+        }
+        #carrinho{
+            width: 4%; 
+            height: auto;
+            margin-left: 89%;
+            margin-top: -100px;
+            backdrop-filter: blur(1px);
+        }
+    </style>
+</head>
+<header>
+    <a href="paginaPrin.html"><img id="logo" src="imagens/logoo.png"></a>
+    <img src="imagens/carrinho.png" id="carrinho">
+    <a href="login.html"><img src="imagens/perfil.png" id="perfil"></a>
+            <div class="opcao">
+                <ul>
+                    <li>
+                        <a href="escrita.html"><b>CANETAS</b><img class="icon" src="imagens/caneta.png"></a><br>
+                        
+                    </li> 
+                    <li>
+                    <a href="caderno.html"><b>CADERNOS</b><img class="icon" src="imagens/caderno.png"></a>
+                    
+                    </li>
+                    <li>
+                        <a href="borrachas.html"><b>BORRACHAS</b><img class="icon" src="imagens/borracha.png"></a>
+                        
+                    </li>
+                    <li>
+                        <a href="apontador.html"><b>APONTADORES</b><img class="icon" src="imagens/apontador.png"></a>
+                    
+                    </li>
+                    <li>
+                        <a href="marcat.html"><b>MARCA TEXTO</b><img class="icon" src="imagens/pincel.png"></a>
+                        
+                    </li>
+                    <li>
+                        <a href="lapis.html"><b>LÁPIS</b><img class="icon" src="imagens/lapis.png"></a>
+                        
+                    </li>
+                    <li>
+                        <a href="postit.html"><b>POST IT</b><img class="icon" src="imagens/bloco.png"> </a>
+                        
+                    </li>
+                </ul>
+    
+            </div>  
+</header>
+<body>
+    <h1>SÓ MARCA TEXTO FÓFIS 🥰</h1>
+    <div class="catalogo">
+        <ul>
+            <li>
+                <div class="produto">
+                    <img src="img_marcat/marcat_terroso_leoeleo.png" class="marcat">
+                    <div class="info-produto">
+                        <div class="nome-produto">
+                            Marca Texto Plantaholic 6 Cores | Leoarte
+                        </div>
+                        <div class="preco-produto">
+                            <span class="preco">
+                                R$ 24,99
+                            </span>
+                        </div>
+                    </div>
+                    <img src="imagens/adicionar.png" class="add"></a>
+            </li>
+            <li>
+                <img src="img_marcat/marcat_pet_cis.png" class="marcat">
+                <div class="infoproduto">
+                    <div class="produto">
+                        Marca Texto Pets Baby | CIS
+                    </div>
+                    <div class="preco-produto">
+                        <span class="preco">
+                            R$ 4,50
+                        </span>
+                    </div>
+                </div>
+                <img src="imagens/adicionar.png" class="add">
+            </li>
+            <li>
+                <img src="img_marcat/marcat_flash_tris.png" class="marcat">
+                <div class="infoproduto">
+                    <div class="produto">
+                        Marca Texto Flash com Gliter | TRIS
+                    </div>
+                    <div class="preco-produto">
+                        <span class="preco">
+                            R$ 10,90
+                        </span>
+                    </div>
+                </div>
+                <img src="imagens/adicionar.png" class="add">
+            </li>
+            <li>
+                <img src="img_marcat/marcat_2pontas_tris.png" class="marcat">
+                <div class="infoproduto">
+                    <div class="produto">
+                        Marca Texto Balinha Holic | TRIS
+                    </div>
+                    <div class="preco-produto">
+                        <span class="preco">
+                            R$ 19,90
+                        </span>
+                    </div>
+                </div>
+                <img src="imagens/adicionar.png" class="add">
+            </li>
+            <li>
+                <img src="img_marcat/marcat_sorvete.png" class="marcat">
+                <div class="infoproduto">
+                    <div class="produto">
+                        Marca Texto Sorvetinho | Leo&Leo
+                    </div>
+                    <div class="preco-produto">
+                        <span class="preco">
+                            R$ 3,50
+                        </span>
+                    </div>
+                </div>
+                <img src="imagens/adicionar.png" class="add">
+    
+            </li>
+        </ul>
+    </div>
+    <h3>
+        Bem-vindo ao nosso site! Aqui, você pode montar sua lista escolar com as canetas que deseja comprar na loja física.
+        Ao visitar nossa loja, consulte a disponibilidade do produto e cores.<br>
+        <br>
+        Novidades em breve...
+    </h3>
+</body>
+</html>

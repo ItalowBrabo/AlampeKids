@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borrachas</title>
+    <style>
+        body{
+            font-family: Arial;
+        }
+        #logo{
+            width: 250px;
+            height: auto;
+            margin-left: 40%;
+            margin-top: 10px;
+            position: relative;
+        }
+        #perfil{
+            width: 5%; 
+            height: auto;
+            margin-left: 80%;
+            margin-top: -100px;
+            backdrop-filter: blur(1px);
+        }
+        .opcao{
+        display: flex;
+        padding: 0;
+        list-style-type: none;
+        box-shadow: 0 5px 8px rgb(189, 205, 289);
+        background-color: rgb(189, 255, 255);
+        }
+        .opcao ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;    
+        }
+        .opcao li{
+            margin-right: 3%;
+            font-size: 100%;
+            margin-left: 3em; 
+        }
+        .icon{
+            width: 50px;
+            height: 50px;
+            margin-left: 22px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            font-family: comic Sans MS;
+        }
+        header{
+            background-image: url(imagens/fundo.png);
+            background-size: contain;
+            
+        }
+        .catalogo{
+            display: flex;
+            padding: 0;
+            list-style-type: none;
+            box-shadow: 0 5px 8px rgb(189, 205, 289);
+            
+        }
+        .catalogo ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .catalogo li{
+            margin-right: 3%;
+            font-size: 100%;
+            margin-left: 3em; 
+        }
+        .add{
+            width: 100%;
+            height: auto;
+            display:block;
+            margin: 0 auto;
+
+        }
+        .nome-produto .info-produto .add{
+            margin: 10px 0;
+            font-size: 5rem;
+            line-height: 1.4;
+            letter-spacing: .28px;
+            -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+            flex-grow: 1;
+            display: block;
+            text-align: center;
+        }
+        .preco-produto .preco{
+            font-size: 1.50rem;
+            font-weight: 700;
+            display: inline-block;
+            line-height: 1.35;
+            font-family: comic sans ms;
+            display: block;
+
+        }
+        .opcao{
+        display: flex;
+        padding: 0;
+        list-style-type: none;
+        box-shadow: 0 5px 8px rgb(189, 205, 289);
+        background-color: rgb(189, 255, 255);
+        }
+        #carrinho{
+            width: 4%; 
+            height: auto;
+            margin-left: 89%;
+            margin-top: -100px;
+            backdrop-filter: blur(1px);
+        }
+        #carrinho{
+            width: 4%; 
+            height: auto;
+            margin-left: 89%;
+            margin-top: -100px;
+            backdrop-filter: blur(1px);
+        }
+    </style>
+</head>
+<header>
+    <a href="paginaPrin.html"><img id="logo" src="imagens/logoo.png"></a>
+    <a href="login.html"></a>
+    <img src="imagens/carrinho.png" id="carrinho">
+    <img src="imagens/perfil.png" id="perfil">
+        
+        
+            <div class="opcao">
+                <ul>
+                    <li>
+                        <a href="escrita.html"><b>CANETAS</b><img class="icon" src="imagens/caneta.png"></a><br>
+                        
+                    </li> 
+                    <li>
+                    <a href="caderno.html"><b>CADERNOS</b><img class="icon" src="imagens/caderno.png"></a>
+                    
+                    </li>
+                    <li>
+                        <a href="borrachas.html"><b>BORRACHAS</b><img class="icon" src="imagens/borracha.png"></a>
+                        
+                    </li>
+                    <li>
+                        <a href="apontador.html"><b>APONTADORES</b><img class="icon" src="imagens/apontador.png"></a>
+                    
+                    </li>
+                    <li>
+                        <a href="marcat.html"><b>MARCA TEXTO</b><img class="icon" src="imagens/pincel.png"></a>
+                        
+                    </li>
+                    <li>
+                        <a href="lapis.html"><b>LÁPIS</b><img class="icon" src="imagens/lapis.png"></a>
+                        
+                    </li>
+                    <li>
+                        <a href="postit.html"><b>POST IT</b><img class="icon" src="imagens/bloco.png"> </a>
+                        
+                    </li>
+                </ul>
+    
+            </div>  
+</header>
+<body>
+    <h1>APAGANDO ERROS DA SUA VI... ESCRITA! 😁 </h1>
+    <div class="catalogo">
+        <ul>
+            <li>
+                <div class="produto">
+                    <img src="img_borracha/borracha_balinha_tris.jpeg" class="borrachas" id="borracha_balinha_tris">
+                    <div class="info-produto">
+                        <div class="nome-produto">
+                            Borracha Balinha Holic | TRIS
+                        </div>
+                        <div class="preco-produto">
+                            <span class="preco">
+                                R$ 6,95
+                            </span>
+                        </div>
+                    </div>
+                    <img src="imagens/adicionar.png" class="add">
+            </li>
+            <li>
+                <img src="img_borracha/borracha_pote_fundodomar_tilibra.jpeg" class="borracha" id="borracha_pote_fundodomar_tilibra">
+                <div class="infoproduto">
+                    <div class="produto">
+                        Borracha Mini Bubble Fundo Do Mar | Tilibra
+                    </div>
+                    <div class="preco-produto">
+                        <span class="preco">
+                            R$ 13,50
+                        </span>
+                    </div>
+                </div>
+                <img src="imagens/adicionar.png" class="add">
+            </li>
+            <li>
+                <img src="img_borracha/borracha_spotcolor_cis.png" class="borrachas" id="borracha_spotcolor_cis">
+                <div class="infoproduto">
+                    <div class="produto">
+                        Borracha Spot Color Neon | CIS
+                    </div>
+                    <div class="preco-produto">
+                        <span class="preco">
+                            R$ 2,90
+                        </span>
+                    </div>
+                </div>
+                <img src="imagens/adicionar.png" class="add">
+            </li>
+            <li>
+                <img src="img_borracha/borracha_surprise_tris.png" class="borrachas" id="borracha_surprise_tris">
+                <div class="infoproduto">
+                    <div class="produto">
+                        Borracha Holic Surprise | TRIS
+                    </div>
+                    <div class="preco-produto">
+                        <span class="preco">
+                            R$ 7,95
+                        </span>
+                    </div>
+                </div>
+                <img src="imagens/adicionar.png" class="add">
+            </li>
+            <li>
+                <img src="img_borracha/borracha_ninja_kaz.jpeg" class="borracha" id="bo">
+                <div class="infoproduto">
+                    <div class="produto">
+                        Borracha Decorada Ninja | KAZ
+                    </div>
+                    <div class="preco-produto">
+                        <span class="preco">
+                            R$ 3,50
+                        </span>
+                    </div>
+                </div>
+                <img src="imagens/adicionar.png" class="add">
+            </div>
+            </li>
+        </ul>
+    </div>
+    <h3>
+        Bem-vindo ao nosso site! Aqui, você pode montar sua lista escolar com as canetas que deseja comprar na loja física.
+        Ao visitar nossa loja, consulte a disponibilidade do produto e cores.<br>
+        <br>
+        Novidades em breve...
+    </h3>
+</body>
+</html>
